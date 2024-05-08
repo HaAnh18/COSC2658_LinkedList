@@ -7,8 +7,7 @@ public class Map2D extends LinkedList<PlaceNode> {
     public boolean add(String id, String name, int x, int y, String[] services) {
         Place newPlace = new Place(id, name, new Point(x, y), services);
         // Otherwise, insert the new place at the front of the list
-        return insertAtHead(new PlaceNode(newPlace, null));
-//        return true;
+        return insertAt(0, new PlaceNode(newPlace, null));
     }
 
     // Method to search for a place by its coordinates
