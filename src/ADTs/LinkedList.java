@@ -68,7 +68,7 @@ public class LinkedList<T> implements List<T> {
         return false;
     }
 
-    private boolean insertAtHead(T value) {
+    public boolean insertAtHead(T value) {
         Node<T> n = new Node<T>(value);
         n.next = head;
         head = n;

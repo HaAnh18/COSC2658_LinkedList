@@ -6,13 +6,8 @@ public class Map2D extends LinkedList<PlaceNode> {
     // Method to add a new place to the map
     public boolean add(String id, String name, int x, int y, String[] services) {
         Place newPlace = new Place(id, name, new Point(x, y), services);
-        reset();  // Reset the pointer to the beginning of the list
-        if (!hasNext()) {
-            // If the list is empty, insert the new place at the beginning
-            return insertAt(0, new PlaceNode(newPlace, null));
-        }
-        // Otherwise, insert the new place at the end of the list
-        return insertAt(size(), new PlaceNode(newPlace, null));
+        // Otherwise, insert the new place at the front of the list
+        return insertAtHead(new PlaceNode(newPlace, null));
 //        return true;
     }
 

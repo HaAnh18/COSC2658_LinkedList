@@ -17,6 +17,7 @@ public class Main {
             System.out.println(map.next());
         }
         map.remove(1,4);
+        map.reset();
         System.out.println("After remove: ");
         while (map.hasNext()) {
             System.out.println(map.next());
