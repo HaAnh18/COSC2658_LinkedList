@@ -1,6 +1,5 @@
 # Group 6: Algorithms and Analysis
 
-<hr>
 - Project start date: 08/04/2024
 <br />
 - Project end date: 09/05/2024
